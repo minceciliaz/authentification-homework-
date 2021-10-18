@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<style>
+	*{
+		padding:2.5px;
+		font-family: 'Roboto', sans-serif;
+		margin: 3px;
+	}
+	.login-page {
+  		width: 360px;
+ 		padding: 8% 0 0;
+  		margin: auto;
+}
+
+#psw{
+	padding-left:3.3px;
+}
+
+h1{
+	padding-bottom: 28px;
+}
+button{
+        display: inline-flex;
+    justify-content: center;
+    align-items: center;
+	
+  
+    background-color: hsl(17, 100%, 64%);
+    --padding-x: 1.2em;
+    border-color: transparent;
+     border-radius: 0.25em;
+    box-shadow: 0 1px 4px hsla(220, 90%, 37%, 0.25);
+  
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+    transition: .2s;
+        
+    }
+
+
+</style>
+
+<body style="list-style: none;">
+	<div class="login-page">
+	<h1>
+		Login Page
+	</h1>
+	<form class="login-form" action="/login" method="POST">
+		<li>
+		<label for="username">UserName</label>
+		<input type="text" placeholder="username" id="xyz" name="username">
+	</li>
+	<div id="psw">
+		<li>
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password">
+		</li>
+	</div>
+	<li>
+		<button>Login</button>
+	</li>
+	</form>
+	<ul>
+		<li><a href="/">Home</a></li>
+		<li><a href="/register">SignUp</a></li>
+	</ul>
+	</div>
+</body>
+</html>
+
+
+
+
+

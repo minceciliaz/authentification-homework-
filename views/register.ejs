@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        font-family: 'Roboto', sans-serif;
+    }
+    .signup{
+        width: 360px;
+ 		padding: 8% 0 0;
+  		margin: auto;
+        display: block;
+    }
+
+    button{
+        display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: #f7a62e;
+    --padding-x: 1.2em;
+    border-color: transparent;
+     border-radius: 0.25em;
+    box-shadow: 0 1px 4px hsla(220, 90%, 37%, 0.25);
+  
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+    transition: .2s;
+        
+    }
+    li{
+        list-style: none;
+        margin-bottom: 5px;
+    }
+
+    #container1{
+    
+        background-color: #FFF;
+    height: 600px;
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0px;
+    text-align:center;
+    }
+
+
+input {
+    height: 20px;
+    width: 300px;
+    border: 1px solid #000;
+    margin-top: 10px;
+    float: left;
+}
+
+h1 {
+    	color: #f7a62e;
+    	text-align: center;
+		}
+</style>
+<body>
+    <div class="signup">
+        <h1>
+            Register
+        </h1>
+        <div id="container1"  style="width: 253px; height: 28px; height :30px; line-height:30px;">
+        <form action="/register" method="POST">
+            <li id="1">
+            <label for="username">UserName </label>
+            <input type="text" id="username" name="username">
+        </li>
+        <li id="2">
+            <label for="password">Password  </label>
+            <input type="password" id="password" name="password">
+        </li>
+        <li id="3">
+            <label for="phone">Telephone </label>
+            <input type="text" name="phone" id="phone">
+        </li>
+        <li id="4">
+            <label for="email">Email    </label>
+            <input type="text" name="email" id="email">
+        </li>
+            <button>Submit</button>
+        </form>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/login">login</a></li>
+        </ul>
+    </div>
+
+    </div>
+</body>
+</html>
+
+
