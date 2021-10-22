@@ -6,11 +6,16 @@ const express               =  require('express'),
       LocalStrategy         =  require("passport-local"),
       passportLocalMongoose =  require("passport-local-mongoose"),
       User                  =  require("./models/user");
+      require('dotenv').config()
+      expressLayouts = require("express-ejs-layouts");
 
 
+
+ 
       
 //Connecting database
-mongoose.connect("mongodb+srv://mern:32tTiLltTL3NJ2ay@cluster0.uy1an.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true });
+mongoose.connect(process.env.MONGO_DB_URL
+    , {useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true });
 
 app.use(require("express-session")({
     secret:"Any normal Word",       //decode or encode session
@@ -32,6 +37,8 @@ app.use(bodyParser.urlencoded(
 ))
 app.use(passport.initialize());
 app.use(passport.session());
+
+
 
 //=======================
 //      R O U T E S
